@@ -1,0 +1,4 @@
+name: DatabaseDrivers
+main: me.yic.databasedrivers.DDriversBungee
+version: ${project.version}
+author: YiC
