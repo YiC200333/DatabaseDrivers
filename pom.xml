@@ -5,7 +5,7 @@
 
     <groupId>me.yic</groupId>
     <artifactId>DatabaseDrivers</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <packaging>jar</packaging>
 
     <properties>
