@@ -3,9 +3,9 @@ package me.yic.databasedrivers;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class DDrivers extends JavaPlugin {
+public class DDriversBukkit extends JavaPlugin {
 
-	private static DDrivers instance;
+	private static DDriversBukkit instance;
 
 	public void onEnable() {
 		instance = this;
@@ -18,7 +18,7 @@ public class DDrivers extends JavaPlugin {
 		getLogger().info("DatabaseDrivers successfully disabled!");
 	}
 
-	public static DDrivers getInstance() {
+	public static DDriversBukkit getInstance() {
 		return instance;
 	}
 

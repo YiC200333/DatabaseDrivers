@@ -10,7 +10,7 @@ public class DDriversAPI extends JavaPlugin {
 
 
 	public static String getversion() {
-		return DDrivers.getInstance().getDescription().getVersion();
+		return DDriversBukkit.getInstance().getDescription().getVersion();
 	}
 
     public static String getclass(String type) {

@@ -1,5 +1,0 @@
-name: DatabaseDrivers
-version: ${project.version}
-main: me.yic.databasedrivers.DDrivers
-author: YiC
-load: STARTUP

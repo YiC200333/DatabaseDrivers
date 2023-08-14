@@ -5,7 +5,7 @@
 
     <groupId>me.yic</groupId>
     <artifactId>DatabaseDrivers</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -18,7 +18,12 @@
 
         <resources>
             <resource>
-                <directory>src/main/resources</directory>
+                <directory>src/main/resources/common</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources/sponge8</directory>
+                <targetPath>META-INF</targetPath>
                 <filtering>true</filtering>
             </resource>
         </resources>
@@ -121,6 +126,11 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
+        <repository>
+            <id>sponge-repo</id>
+            <name>Sponge Maven Repository</name>
+            <url>https://repo.spongepowered.org/repository/maven-public/</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -147,17 +157,25 @@
             <version>1.15.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <!--SpongeAPI 8.0-->
+        <dependency>
+            <groupId>org.spongepowered</groupId>
+            <artifactId>spongeapi</artifactId>
+            <version>8.0.0</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
         <!-- mysql -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.21</version>
+            <version>8.0.30</version>
         </dependency>
         <!-- SQLite -->
         <dependency>
             <groupId>org.xerial</groupId>
             <artifactId>sqlite-jdbc</artifactId>
-            <version>3.32.3.2</version>
+            <version>3.42.0.0</version>
         </dependency>
     </dependencies>
 

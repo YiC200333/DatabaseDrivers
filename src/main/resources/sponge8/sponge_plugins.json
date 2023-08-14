@@ -1,0 +1,30 @@
+{
+  "loader": {
+    "name": "java_plain",
+    "version": "1.11"
+  },
+  "license": "GPL-3.0",
+  "plugins": [
+    {
+      "id": "databasedrivers",
+      "entrypoint": "me.yic.databasedrivers.DDriversSponge8",
+      "name": "DatabaseDrivers",
+      "version": "${project.version}-Sponge8",
+      "branding": {},
+      "contributors": [
+        {
+          "name": "YiC",
+          "description": "Author"
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "spongeapi",
+          "version": "8.0.0-SNAPSHOT",
+          "load-order": "after",
+          "optional": false
+        }
+      ]
+    }
+  ]
+}
