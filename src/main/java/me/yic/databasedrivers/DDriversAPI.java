@@ -6,7 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class DDriversAPI extends JavaPlugin {
 
     private static final String mysqldriver = "me.yic.libs.mysql.jdbc.Driver";
-    private static final String sqlitedriver = "me.yic.libs.sqlite.JDBC";
+    private static final String sqlitedriver = "org.sqlite.JDBC";
 
 
 	public static String getversion() {

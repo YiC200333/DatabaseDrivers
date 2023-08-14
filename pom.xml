@@ -107,10 +107,6 @@
                             <pattern>com.mysql</pattern>
                             <shadedPattern>me.yic.libs.mysql</shadedPattern>
                         </relocation>
-                        <relocation>
-                            <pattern>org.sqlite</pattern>
-                            <shadedPattern>me.yic.libs.sqlite</shadedPattern>
-                        </relocation>
                     </relocations>
                 </configuration>
             </plugin>
